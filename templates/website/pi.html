@@ -1,0 +1,93 @@
+{% extends 'website/navbar.html' %}
+{% block title %} Raspberry pi{% endblock %}
+
+{% block body %} 
+
+
+  
+  <div class="container">
+    <div class="card-group">
+        <div class="col-md-4">
+          <img class="card-img-top" src="/static/images/pi.png" alt="Card image cap">
+          <div class="card-body">
+            
+          </div>
+        </div>
+        
+        <div class="col-md-8">
+          
+          <div class="card-body">
+            <h1 class="card-title"><strong>Raspberry Pi </strong></h1>
+            
+            <p class="card-text">Raspberry Pis are low-cost, programmable computers Raspberry Pi's come with GPIO (General Purpose Input/Output) connections, which can be used to control and connect external devices.A Raspberry Pi has a CPU, GPU, RAM for processing data, a power connector to provide power, HDMI and USB ports for connecting peripheral devices, SD card slots to store operating systems and other media, and an Ethernet port for connecting to a wired network or the Internet.</p>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tab-content">
+                <div class="tab-pane active fade show" id="tab1">
+                    <div class="row text-center">
+                        <div class="col-md-2">
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="pricing-table pricing-table-highlighted">
+                                <div class="pricing-table-header grd1">
+                                    <h2>Raspberry Pi</h2>
+                                    <h3>Basic</h3>
+                                </div>
+                                <div class="pricing-table-space"></div>
+                                <div class="pricing-table-features">
+                                    <p><i class="fa fa-graduation-cap"></i> <strong>24</strong> Sessions</p>
+                                    <p><i class="fa fa-calendar-o"></i> <strong>3 Months</strong> Duration</p>
+                                    <p><i class="fa fa-database"></i> <strong>24</strong> Projects</p>
+                                    <p><i class="fa fa-link"></i> <strong>1 year</strong> Validity</p>
+                                    <p><i class="fa fa-life-ring"></i> <strong>1 Hour</strong> Class Duration</p>
+                                </div>
+                                <div class="pricing-table-sign-up">
+                                    <a href="{% url 'bookdemo' %}" class="hover-btn-new orange"><span>Book Demo</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="pricing-table pricing-table-highlighted">
+                                <div class="pricing-table-header grd1">
+                                    <h2>Raspberry Pi</h2>
+                                    <h3>Advance</h3>
+                                </div>
+                                <div class="pricing-table-space"></div>
+                                <div class="pricing-table-features">
+                                    <p><i class="fa fa-graduation-cap"></i> <strong>24</strong> Sessions</p>
+                                    <p><i class="fa fa-calendar-o"></i> <strong>3 Months</strong> Duration</p>
+                                    <p><i class="fa fa-database"></i> <strong>24</strong> Projects</p>
+                                    <p><i class="fa fa-link"></i> <strong>1 year</strong> Validity</p>
+                                    <p><i class="fa fa-clock-o"></i> <strong>1 Hour</strong> Class Duration</p>
+                                </div>
+                                <div class="pricing-table-sign-up">
+                                    <a href="{% url 'bookdemo' %}" class="hover-btn-new orange"><span>Book Demo</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                        
+                    </div><!-- end row -->
+                </div><!-- end pane -->
+            </div><!-- end content -->
+        </div><!-- end col -->
+    </div><!-- end row -->
+</div><!-- end container -->
+</div><!-- end section -->
+
+</div>
+   
+
+{% endblock %}

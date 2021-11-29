@@ -1,0 +1,118 @@
+{%  extends 'Trainer/main.html' %}
+
+{% block content %}
+
+	<br>
+<div>
+	{% for fee in fees %}
+			<h5>{{fee.Student_name}}</h5>
+			{% endfor %}
+</div>
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>{{student.Student_name}}</h5>
+			<h5>{{student.Father_name}}</h5>
+			<h5>{{student.Father_Contact_no}}</h5>
+			<hr>
+			<a class="btn btn-outline-danger  btn-sm btn-block" href="{% url 'view_student' student.id %}">View profile</a>
+
+		</div>
+	</div>
+
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Fee Information</h5>
+			<hr>
+			<p>Last fee Date</p>
+			<p>Upcoming Due Date</p>
+		</div>
+	</div>
+
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Total Class</h5>
+			<hr>
+			<h1 style="text-align: center;padding: 10px">{{order_count}}</h1>
+		</div>
+	</div>
+</div>
+
+
+<br>
+<div class="row">
+	<div class="col">
+		<div class="card card-body">
+			<form method="get">
+
+		    <button class="btn btn-primary" type="submit">Search</button>
+		  </form>
+		</div>
+	</div>
+	
+</div>
+<br>
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Trainer</th>
+					<th>Date</th>
+					<th>Topic</th>
+					<th>Update</th>
+					<th>Remove</th>
+				</tr>
+
+				{% for topic in topics %}
+
+				<tr>
+					<td>{{topic.trainer}}</td>
+					<td>{{topic.date_created}}</td>
+					<td>{{topic.status}}</td>
+					<td><a class="btn btn-sm btn-info" href="{% url 'update_class' topic.id %}">Update</a></td>
+
+					<td><a class="btn btn-sm btn-danger" href="{% url 'update_class' topic.id %}">Delete</a></td>
+				</tr>
+				{% endfor %}
+
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Student Name</th>
+					<th>Fee Amount</th>
+					<th>Paid Amount</th>
+					<th>Payment Method</th>
+					<th>Upcoming Due Date</th>
+					<th>Paid Date</th>
+					
+					
+				</tr>
+
+				{% for fee in fees %}
+
+				<tr>
+					<td>{{fee.student}}</td>
+					<td>{{fee.total_amount}}</td>
+					<td>{{fee.paid_amount}}</td>
+					<td>{{fee.payment_mode}}</td>
+					<td>{{fee.upcoming_Due_Date}}</td>
+					<td>{{fee.date_created}}</td>
+					
+				</tr>
+				{% endfor %}
+
+			</table>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

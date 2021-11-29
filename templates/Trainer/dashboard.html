@@ -1,0 +1,73 @@
+{%  extends 'Trainer/main.html' %}
+
+{% block content %}
+
+{%  include 'Trainer/status.html' %}
+
+
+<div>
+	<a class="btn btn-primary  btn-sm btn-block" href="{% url 'view_fee'%}">View Fee</a>
+<div class="row">
+
+	</div>
+<br>
+<div class="row">
+	<div class="col-md-5">
+		<h5>Students:</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="{% url 'add_student'%}">Add Student</a>
+			<table class="table table-sm">
+				<tr>
+					<th></th>
+					<th>Student Name</th>
+					<th>Father's Name</th>
+				</tr>
+
+				{% for customer in customers %}
+					<tr>
+						<td><a class="btn btn-sm btn-info" href="{% url 'view_profile' customer.id %}">View</a></td>
+						<td>{{customer.Student_name}}</td>
+						<td>{{customer.Father_name}}</td>
+					</tr>
+				{% endfor %}
+
+			</table>
+		</div>
+	</div>
+
+	<div class="col-md-7">
+		<h5>LAST 5 Class</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="{% url 'add_class' %}">Add Class</a>
+			<table class="table table-sm">
+				<tr>
+					<th>Student Name</th>
+					<th>Date Of Class</th>
+					<th>Topic</th>
+					<th>Update</th>
+					<th>Remove</th>
+				</tr>
+
+				{% for order in orders %}
+					<tr>
+						<td>{{order.student}}</td>
+						<td>{{order.date_created}}</td>
+						<td>{{order.status}}</td>
+						<td><a class="btn btn-sm btn-info" href="{% url 'update_class' order.id %}">Update</a></td>
+
+						<td><a class="btn btn-sm btn-danger" href="{% url 'delete_order' order.id %}">Delete</a></td>
+
+					</tr>
+				{% endfor %}
+
+		
+			</table>
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
+

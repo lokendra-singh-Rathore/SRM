@@ -1,0 +1,63 @@
+{%  extends 'Trainer/main.html' %}
+
+{% block content %}
+
+
+
+<div class="">
+	<div class="col">
+		<div class="card card-body">
+			<form method="get">
+				{{myfilter.form}}
+		    <button class="btn btn-primary" type="submit">Search</button>
+		  </form>
+		</div>
+	</div>
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Student Name</th>
+					<th>Fee Amount</th>
+					<th>Paid Amount</th>
+					<th>Payment Method</th>
+					<th>Upcoming Due Date</th>
+					<th>Paid Date</th>
+					
+					
+				</tr>
+
+				{% for fee in fees %}
+
+				<tr>
+					<td>{{fee.student}}</td>
+					<td>{{fee.total_amount}}</td>
+					<td>{{fee.paid_amount}}</td>
+					<td>{{fee.payment_mode}}</td>
+					<td>{{fee.upcoming_Due_Date}}</td>
+					<td>{{fee.date_created}}</td>
+					
+				</tr>
+				{% endfor %}
+
+			</table>
+		</div>
+	</div>
+</div>
+
+<div>
+	<span>
+		{% if fees.has_previous %}
+		<a  href="?page={{fees.previous_page_number}}"  >Previous</a>
+		{% endif %}
+
+		<span>{{fees.number}}</span>
+
+		{% if fees.has_next %}
+		<a href="?page={{fees.next_page_number}}"  >Next</a>
+		{% endif %}
+	</span>
+</div>
+
+{% endblock %}

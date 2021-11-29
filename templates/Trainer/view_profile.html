@@ -1,0 +1,80 @@
+{%  extends 'Trainer/main.html' %}
+
+
+{% block title %} login page{% endblock %}
+      
+{% block content %}
+
+<div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent text-center">
+              <img class="profile_img" src="" width="200" alt="student dp">
+              <h3>{{View_student.Student_name}}</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0"><strong class="pr-1">School: </strong>{{View_student.School_name}}</p>
+              <p class="mb-0"><strong class="pr-1">Class: </strong>{{View_student.Class}}</p>
+              <p class="mb-0"><strong class="pr-1">DOB: </strong>{{View_student.DOB}}</p>
+              <p class="mb-0"><strong class="pr-1">Gender: </strong>{{View_student.Gender}}</p>
+              <p class="mb-0"><strong class="pr-1">Date of Joined: </strong>{{View_student.Date_joined}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">Father Name</th>
+                  <td width="2%">:</td>
+                  <td>{{View_student.Father_name}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">Mother Name	</th>
+                  <td width="2%">:</td>
+                  <td>{{View_student.Mother_name}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">Father Mobile</th>
+                  <td width="2%">:</td>
+                  <td>{{View_student.Father_Contact_no}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">Mother Mobile</th>
+                  <td width="2%">:</td>
+                  <td>{{View_student.Mother_Contact_no}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">Father Occupation</th>
+                  <td width="2%">:</td>
+                  <td>{{View_student.Father_occupation}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">Mother Occupation</th>
+                  <td width="2%">:</td>
+                  <td>{{View_student.Mother_occupation}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+            <div style="height: 26px"></div>
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Address</h3>
+            </div>
+            <div class="card-body pt-0">
+                <p>{{View_student.Address}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

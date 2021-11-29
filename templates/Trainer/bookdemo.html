@@ -1,0 +1,46 @@
+
+{% extends 'website/navbar.html' %}
+
+{% block title %} Home{% endblock %}
+
+{% block body %} 
+<div class="container my-5">
+  
+
+  <div class="row text-center">
+    <div class="">
+        <div class="contact_form">
+            <div id="message"></div>
+            <form id="contactform" class=""  name="contactform" method="post">
+                {% csrf_token %}
+                <div class="row row-fluid">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="your_name" placeholder="Your Name" maxlength="100" required="" id="id_your_name" class="form-control">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <input type="text" name="student_name" placeholder="Student Name" maxlength="100" class="form-control" required="" id="id_student_name">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="school_name" placeholder="School Name" maxlength="100" class="form-control" required="" id="id_school_name">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="text" name="contact" placeholder="Contact" required="" class="form-control" id="id_contact">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <input type="text" name="msg" placeholder="Other Details" maxlength="1000" class="form-control" required="" id="id_msg">
+                    </div>
+                    <div class="text-center pd">
+                        {{form.errors}}
+                        <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get a Quote</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div><!-- end col -->
+
+</div><!-- end row -->
+</div><!-- end container -->
+</div><!-- end section -->
+
+</div>
+{% endblock %}

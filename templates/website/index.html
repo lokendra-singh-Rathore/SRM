@@ -1,0 +1,323 @@
+
+{% extends 'website/navbar.html' %}
+{% block title %} Home{% endblock %}
+
+{% block body %} 
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('/static/images/slider-01.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+									<h2 style="text-align: center;"><strong>Indian Academy Of Robotics </strong> </h2>
+										<p class="lead" style="text-align: center;">Learn Science & Maths With Robotics. </p>
+											<a  href="{% url 'contact' %}" class="hover-btn-new "><span>Contact Us</span></a>
+											
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('/static/images/slider-02.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-left">
+									<div class="big-tagline">
+										<h2 style="text-align: center;" data-animation="animated zoomInRight">WHY  <strong>IAR ?</strong></h2>
+										<p style="text-align: center;" class="lead" data-animation="animated fadeInLeft"> ~WE IMAGINE ~WE CREATE ~WE INNOVATE </p>
+											
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('/static/images/slider-03.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 style="text-align: center;" data-animation="animated zoomInRight"><strong>Make Your Own Robot</strong> Today</h2>
+										<p style="text-align: center;" class="lead" data-animation="animated fadeInLeft"> ~LEGO ~Arduino ~ IoT</p>
+											
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+           
+        
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4></h4>
+                        <h2><i class="fa fa-check"></i> Benefits of Our Courses</h2>
+                        <h3><i class="fa fa-check"></i>Incrases Problem Solving Ability</h3>
+                        <h3><i class="fa fa-check"></i>Improves Concerntration Towards Studies</h3>
+                        <h3><i class="fa fa-check"></i>Incrases Communication Skills</h3>
+                        <h3><i class="fa fa-check"></i>Incrases Logical Thinking & Intelligence</h3>
+                        <h3><i class="fa fa-check"></i>Incrases Presentation Skills</h3>
+                        <h3><i class="fa fa-check"></i>Academic Brilliance</h3>
+                        <h3><i class="fa fa-check"></i>Real Word Applications Of Science Concepts</h3>
+                        <h3><i class="fa fa-check"></i>Passion Towards Science & Technological Career</h3>
+
+                        
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="/static/images/benifits.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="/static/images/franchise.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>How to Become A Franchise ?</h2>
+                        <h4>Let's Build & Grow a Strong Business, Together</h4>
+                        <h5>hy</h5>
+
+                        <a href="#" class="hover-btn-new orange"><span>Contact Us</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+  <div class="container">
+	<div class="card text-center" style="background-color: rgb(229, 243, 243);">
+		<div class="card-header" style="background-color: rgb(51, 237, 243);" >
+		  <h1>Project of Week</h1>
+		</div>
+		<div class="card-body"  >
+			<style>
+				.class-header{
+					color: rgb(196, 215, 218);
+				}
+			</style>
+		  <h5 class="card-title">Student Name</h5>
+		  <div class="card mb-3">
+			<img src="/static/ev3.png" style="height: 300px;" class="card-img-top" alt="...">
+			
+			 
+			  
+			</div>
+		  <p class="card-text">Project Details.</p>
+		  <a href="#" class="btn btn-primary">YouTube Video</a>
+		</div>
+		
+	  </div>
+  </div>
+    <section class="section lb page-section ">
+		<div class="container scr">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Our Courses</h3>
+                    <p class="lead"> We have a step by step Education Model</p>
+                </div>
+            </div><!-- end title -->
+			<div class="timeline ">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Story Starter(LEGO)</h2>
+                                <h3 style="color: aliceblue;">(Age 4-5years)</h3>
+								
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing e</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Duplo(LEGO)</h2>
+                                <h3 style="color: aliceblue;">(Age 5-6years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>WeDo(LEGO)</h2>
+                                <h3 style="color: aliceblue;">(Age 6-9years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>NXT(LEGO)</h2>
+                                <h3 style="color: aliceblue;">(Age 9-12years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>EV3(LEGO)</h2>
+                                <h3 style="color: aliceblue;">(Age 12+years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Electronics</h2>
+                                <h3 style="color: aliceblue;">(Age 9-11years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Arduino</h2>
+                                <h3 style="color: aliceblue;">(Age 11-13years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Raspberry pi(IoT)</h2>
+                                <h3 style="color: aliceblue;">(13+years)</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="section cl">
+		<div class="container">
+			<div class="row text-left stat-wrap">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-study"></i></span>
+					<p class="stat_count">1200</p>
+					<h3>Students</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
+					<p class="stat_count">24</p>
+					<h3>Courses</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-years"></i></span>
+					<p class="stat_count">4</p>
+					<h3>Years Completed</h3>
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+
+    
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Testimonials</h3>
+                
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                
+                                <h4>Himanshi - St. Xaviers </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Traners!</h3>
+                                <p class="lead">"My kids have been taking LEGO Robotics with EV3 at Indian Academy Of Robotics and are blown away by the staff's passion for all things GEEK and for the cultivation of our kids' curiosity."</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                
+                                <h4>Lalit Sharma - DPS Indirapuram School </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">"An exceptional experience. It not only taught the basics of Robotics, but allowed my son to take what he learned and expand it to a higher level. I loved that they created an actual finished ROBOT in class.".</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                
+                                <h4>Mrs. Rachna </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">"My daughter didn't know if she would have fun, but she loved the class and now she is all excited about engineering."</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    
+
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+
+
+    
+{% endblock %}

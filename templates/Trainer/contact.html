@@ -1,0 +1,110 @@
+
+{% extends 'website/navbar.html' %}
+
+{% block title %} Contact{% endblock %}
+
+{% block body %} 
+<body class="host_version"> 
+
+	
+
+   
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Contact<span class="m_1">Get in Touch With Us.</span></h1>
+		</div>
+	</div>
+	
+    <div id="contact" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Need Help? Sure we are Online!</h3>
+                <p class="lead"></p>
+            </div><!-- end title -->
+
+            <div class="row text-center">
+                <div class="">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactform" class="" action="" name="contactform" method="post">
+                            {% csrf_token %}
+                            <div class="row row-fluid">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" name="first_name" placeholder="First Name" maxlength="100" required="" id="id_first_name" class="form-control"> 
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" name="last_name" placeholder="Last Name" maxlength="100" required="" id="id_last_name" class="form-control"> 
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="email" name="email" id="id_email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" name="phone" id="id_phone" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <textarea class="form-control" name="msg" id="id_msg" rows="6" placeholder="Give us more details.."></textarea>
+                                </div>
+                                <div class="text-center pd">
+                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get a Quote</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+    <div>
+        <div class="card-group">
+            <div class="card ">
+              <img src="/static/images/center.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Main Branch</h5>
+                <p class="card-text"><pre>
+                    Indian Academy of Robotics
+                    PICCOLO Early Learning Centre
+                    144/3 - Gyan Khand - 4
+                    Indrapuram, Ghaziabad,
+                    Uttar Pradesh
+                    +91-7428982245
+                    +91-7428988245
+                </pre></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/static/images/center.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Delhi Branch</h5>
+                <p class="card-text"><pre>
+                    Indian Academy of Robotics
+                    PICCOLO Early Learning Centre
+                    A-267, Near Yamuna Sports Comples
+                    Block A, Surajmal Vihar
+                    Delhi
+                    +91-7428982245
+                    +91-7428988245</pre></p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img src="/static/images/center.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Other Branch</h5>
+                <p class="card-text">
+                    <pre>
+                    Indian Academy of Robotics
+                    114, Ground Floor
+                    Abhay Khand - 3
+                    Indirapuram, Ghaziabad
+                    +91-7428982245
+                    +91-7428988245 </pre></p>
+                
+              </div>
+            </div>
+          </div>
+    </div>
+    
+
+{% endblock %}
